@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;;
+    background-color: #1F2235;
+    color: white;
+    
+}
+.main-header {
+    display: flex;     
+    justify-content: space-between;   
+    align-items: center; 
+    padding: 0.5em 2em;    
+    /* margin-left: 1em;
+    margin-right: 1em;        */
+      
+}
+.navbar {
+    padding: 30px 0;
+
+}
+
+ .nav-ul {
+    list-style: none;     
+}
+.nav-li {
+    display: inline-block;    
+}
+
+.nav-li a {
+    text-decoration: none; 
+    margin: 0 14px; 
+    font-weight: 500; 
+    color: white;
+    font-size: 18px;     
+}
+
+nav ul li a:hover{
+    color: #FF4A57;
+}
+
+#logo {
+    width: 70%;
+    padding-left: 18px;
+}
+
+.home-top {
+    background-color: #24263B;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 3em;
+}
+.home-top1 {
+    margin: 7em 0;
+}
+
+.home-top1 > h2{
+    font-size: 62px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.home-top1 > p{
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+/* .social-div {
+    margin: 40px 0;
+           
+} */
+
+.social-div a {
+     margin: 8px;
+} 
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    /* width: 25px; */
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%; 
+    border: 2px solid #FF4A57;   
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook, .fa-pinterest, .fa-twitter, .fa-linkedin, .fa-instagram {
+    color: white;
+  }
+
+  .btn1{
+    border: 2px solid;
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;    padding: 13px 40px;
+    border-radius: 50px;
+    font-size: 15px;
+    border-color: #FF4A57;
+    background-color: rgba(101, 30, 30, 0);
+    margin-right: 0.5rem;
+}
+
+.btn1 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn1:hover{
+    background-color: #FF4A57;
+    transition: 0.3s ease;
+}
+
+.bnyt{
+    display: flex;
+    align-items: center;
+    
+}
+
+.utube{
+    border: #FF4A57 2px solid;
+    border-radius: 50px;
+    margin-left: 15px;
+    background-color: #FF4A57;
+}
+
+.mdi-play{
+    font-size: 30px;
+    padding: 3px 30px;
+    display: inline-block;
+}

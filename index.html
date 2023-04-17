@@ -6,39 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="shortcut icon" href="images\favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="style\main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css" integrity="sha512-LX0YV/MWBEn2dwXCYgQHrpa9HJkwB+S+bnBpifSOTO1No27TqNMKYoAn6ff2FBh03THAzAiiCwQ+aPX+/Qt/Ow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
-        <img src="images\ezien kay logo.png" alt="my logo" id="logo" >
-        <nav>
-            <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skill">Skill</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="main-header">
+        <div>
+            <img src="images\ezien kay logo.png" alt="my logo" id="logo" >
+        </div>
+        <div>
+            <nav class="navbar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="#home">Home</a></li>
+                    <li class="nav-li"><a href="#service">Services</a></li>
+                    <li class="nav-li"><a href="#about">About</a></li>
+                    <li class="nav-li"><a href="#skill">Skill</a></li>
+                    <li class="nav-li"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-li"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
+        <section class="home-top">
             <div>
-                <div>
-                    <h2>I am K. Kelly Ajayi</h2>
-                    <p>i'm EzienKay, professional Full Stack developer with long time experience in this field</p>
-                    <div>
-                        <button><a href="#portfolio">My Portfolio</a></button>
-                        <audio controls>
-                            <source src="audio\Recording.m4a" type="audio/mpeg">
-                                Please Check the audio Extension
-                            </audio>
+                <div class="home-top1">
+                    <div class="social-div">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-pinterest"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
                     </div>
-                    <div>
-                        <img src="images\img.png" alt="portfolio">                        
-                    </div>
+                    
+                                       
+                    <h2>I am Kola Kelly Ajayi</h2>
+                    <p>i'm Kola Kelly, professional Full Stack developer with long time experience in this field</p>
+                    <div class="bnyt">
+                        <button class="btn1"><a href="#portfolio">My Portfolio</a></button>
+                        <div class="utube">
+                            <span class="mdi mdi-play"></span>
+                        </div>
+                        
+                    </div>                    
                 </div> 
-            </div>    
+            </div> 
+            <div class="home-topimg">
+                <img src="images\kay-official-2.png" alt="portfolio">                        
+            </div>   
         </section>
         <section id="service">
             <div>
