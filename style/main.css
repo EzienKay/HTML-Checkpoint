@@ -24,14 +24,15 @@ body{
 
 }
 
- .nav-ul {
+ /* .nav-ul {
     list-style: none;     
-}
-.nav-li {
+} */
+
+.nav-li, .blog-li {
     display: inline-block;    
 }
 
-.nav-li a {
+.nav-li a, .port-li a{
     text-decoration: none; 
     margin: 0 14px; 
     font-weight: 500; 
@@ -140,11 +141,11 @@ nav ul li a:hover{
     display: inline-block;
 }
 
-#service, #about, #skill{
+#service, #about, #skill, #portfolio, #blog, #contact, footer{
     padding: 100px 2em 105px 2em;
 }
 
-.serv1, .abt{
+.serv1, .abt, .port{
     text-align: center;
     padding: 10px;
     margin: 0 27%;
@@ -156,14 +157,15 @@ nav ul li a:hover{
     font-size: 18px;
 
 }
-.serv1 h2, .abt h2, .skilh h2{
+.serv1 h2, .abt h2, .skilh h2, .port h2{
     font-size: 62px;
     margin-bottom: 25px;
 }
 
-.servp2, .abt p{
+.servp2, .abt p, .port p{
     line-height: 30px;
     font-size: 16px;
+    color: #dfdfdf;
 }
 
 hr{
@@ -218,11 +220,11 @@ hr{
     line-height: 26px;
 }
 
-#about{
+#about, #portfolio, footer{
     background-color: #23263A;
 }
 
-.abt1, .abtcon2{
+.abt1, .abtcon2, .blogcard, .cont, .contflex{
     display: flex;
 }
 
@@ -236,7 +238,7 @@ hr{
     width: 100%;
 }
 
-.abtcon1 p, .abtcon2 p, .skilh p{
+.abtcon1 p, .abtcon2 p, .skilh p, .blog-ul{
     margin-bottom: 1.5rem;
 }
 .abtcon1 h3{
@@ -258,6 +260,7 @@ hr{
 
     display: flex;
     margin: 0 100px;
+    align-items: center;
 
 }
 
@@ -271,18 +274,37 @@ hr{
 }
 
 .skillbar{
-    margin-bottom: 10px;    
+    margin-bottom: 30px;    
 }
 
 .skillbar>p{
     margin-bottom: 10px;
 }
 
-.skillbar2{
+.skillbar2, .skillbar3, .skillbar4, .skillbar5, .skillbar6{
     height: 5px;
-    width: 88%;
     background-color: #FF4A57;
     position: relative;
+}
+
+.skillbar2{
+    width: 95%;
+}
+
+.skillbar3{
+    width: 88%;
+}
+
+.skillbar4{
+    width: 80%;
+}
+
+.skillbar5{
+    width: 75%;
+}
+
+.skillbar6{
+    width: 90%;
 }
 
 .skillbar1{
@@ -300,4 +322,189 @@ hr{
     padding: 6px 12px;
     font-weight: bold;
     border-radius: 6px;
+}
+
+.skillnum::after{
+    border-style: solid;
+    border-width: 0.3125rem 0.3125rem 0 0;
+    border-color: #fff transparent transparent transparent;
+    bottom: -0.4375rem;
+    content: "";
+    left: 1.375rem;
+    position: absolute;
+}
+
+#portnav1{
+    margin-bottom: 50px;
+}
+
+.port-ul{
+    text-align: center;
+}
+
+.port-li{
+    color: #fff;
+    display: inline-block;    
+    font-size: 15px;
+    margin-right: 0.5rem;
+    border: 2px solid#23263A;
+    background: #23263a;
+    padding: 6px 5px;
+    border-radius: 20px;
+}
+
+.port-li:hover{
+    background: #FF4A57;
+    border-color: #FF4A57;
+}
+
+.port-li:first-child, .img-col:hover{
+    border-color: #FF4A57;
+}
+
+.rows{
+    display: flex;  
+    flex-wrap: wrap;
+
+}
+
+.col{
+    flex: 33%;
+    padding: 0 15px;        
+}
+.img-col, .blog1 img{
+    width: 100%;
+}
+
+.img-col {
+    margin-bottom: 30px;  
+    border-radius: 10px;      
+} 
+
+.img-cola{
+    position: relative;
+}
+
+.img-col:hover{
+    border: 2px solid #FF4A57;
+}
+  
+.blog1, .cont{
+    margin: 0 15px;
+    border-radius: 8px;
+    background-color: #23263a;
+}
+
+.blog1 img{
+    border-radius: 10px 10px 0 0;
+}
+
+.blog1 a{
+    text-decoration: none;      
+    color: #FF4A57;        
+}
+
+.blog1a .fa-fw{
+    margin-left: 7px;
+}
+
+.blog1 a:hover, .blog1 a:hover i{
+    margin-left: 0px;
+    color: white;
+    transition: .5s ease;
+}
+
+.blog-li .fa{
+    margin: 0px 8px 0 5px;
+}
+
+.blog-ul{
+    font-size: 15px;
+}
+
+.blog1a{
+    font-weight: 600;
+}
+
+.blog2{
+    padding: 30px;
+}
+
+.blog2 h5{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.cont{
+    padding: 25px; 
+    width: 33%;   
+}
+
+
+.cont .fa-fw{
+    color: #FF4A57;
+    font-size: 32px;
+    margin-right: 15px;
+} 
+
+.cont h5{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.cont p{
+    margin-bottom: 5px;
+}
+
+#contact{
+    padding-top: 20px;
+}
+
+.inp, .inp1, .inp2{
+    width: 48%;
+    background: #23263a;
+    border: 1px solid #222645;
+    padding: 20px;
+    margin: 10px 10px 0 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.inp1, .inp2{
+    width: 98%;
+}
+
+form{
+    margin: 4em 0em 1em 0em;
+    text-align: center;
+    position: relative;
+}
+
+.subbtn{
+    border-radius: 100px;
+    border: none;
+    padding: 18px 60px;
+    background: #FF4A57;
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    left: 14px;
+    margin-top: 10px;
+}
+
+.foot{
+    text-align: center;
+    padding: 10px;
+    margin: 0 20%;
+    line-height: 30px;
+    font-size: 16px;
+    color: #dfdfdf;
+}
+
+footer{
+  padding-bottom: 0px;  
 }
